@@ -34,10 +34,8 @@ It can make RREF much faster.
 * Simply use  "<<SparseRREF`" to enable this package
 * Input form : currently only SparseArray
 * Use "SRSparseRowReduce[SparseArray, Modulus->int_mod]" to perform rref.
-
-## Help
-
-Any advise for common problems or issues.
+* Warning: Integer Matrices Only! If using the form with quotients, please proceed it with the line in Mathematica:
+   Cancel[SparseArray,Modulus->int_mod] 
 
 
 ## Authors
