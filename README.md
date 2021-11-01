@@ -19,7 +19,7 @@ It can make RREF much faster.
 ### Installation
 
 * When installing, put the SparseRREF.so to your /usr/local/lib (recommended,for the spasm library is located in the same place), and put folder SparseRREF to your /usr/local/Wolfram/Mathematica/12.X/Packages/.
-*  If not work, add the following codes to your init.m (to get the path to this file, simply use        FileNameJoin[{$UserBaseDirectory, "Kernel", "init.m"}]) (replace the path with yours in the codes)
+*  If not work, add the following codes to your init.m (to get the path to this file, simply use        FileNameJoin[{$UserBaseDirectory, "Kernel", "init.m"}])
     
     
     $SparseRREFPath = "Your/Installation/Path/to/SparseRREF"
@@ -27,6 +27,7 @@ It can make RREF much faster.
     $SparseRREFLibraryPath = "/usr/local/lib"
     If[Not[MemberQ[$LibraryPath,$SparseRREFLibraryPath]],$LibraryPath = Flatten[{$LibraryPath, $SparseRREFLibraryPath }]];
     
+     (replace the path with yours in the codes)
 
 ### Executing program
 
