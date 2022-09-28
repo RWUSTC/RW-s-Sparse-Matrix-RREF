@@ -17,22 +17,9 @@ It can make RREF much faster.
 * Better be used under ubuntu 20.04 and up.
 * Currently tested under Mathematica 12.0 and 13.0.
 
-### Automatic Installation
+### Installation
 
-* To install automatically, run installation.sh (DO NOT USE sudo !). 
-
-### Manual Installation
-
-* When installing, put the SparseRREF.so to your /usr/local/lib (recommended,for the spasm library is located in the same place), and put folder SparseRREF to your /usr/local/Wolfram/Mathematica/$Version/Packages/.
-* If not work, add the following codes to your init.m (to get the path to this file, simply use        FileNameJoin[{$UserBaseDirectory, "Kernel", "init.m"}])
-    
-    
-    $SparseRREFPath = "Your/Installation/Path/to/SparseRREF"
-    If[Not[MemberQ[$Path,$SparseRREFPath]],$Path = Flatten[{$Path, $SparseRREFPath }]];
-    $SparseRREFLibraryPath = "/usr/local/lib"
-    If[Not[MemberQ[$LibraryPath,$SparseRREFLibraryPath]],$LibraryPath = Flatten[{$LibraryPath, $SparseRREFLibraryPath }]];
-    
-     (replace the path with yours in the codes)
+* Open Mathematica, run "Get["$PackagePath/SparseRREF.m"];
 
 ### Executing program
 
