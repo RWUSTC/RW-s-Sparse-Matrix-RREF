@@ -13,13 +13,18 @@ It can make RREF much faster.
 
 ### Dependencies
 
-* SpaSM package installed on your pc.
+* SpaSM package installed on your pc. SpaSM on github: https://github.com/cbouilla/spasm
 * Better be used under ubuntu 20.04 and up.
+* Currently tested under Mathematica 12.0 and 13.0.
 
-### Installation
+### Automatic Installation
 
-* When installing, put the SparseRREF.so to your /usr/local/lib (recommended,for the spasm library is located in the same place), and put folder SparseRREF to your /usr/local/Wolfram/Mathematica/12.X/Packages/.
-*  If not work, add the following codes to your init.m (to get the path to this file, simply use        FileNameJoin[{$UserBaseDirectory, "Kernel", "init.m"}])
+* To install automatically, run installation.sh (DO NOT USE sudo !). 
+
+### Manual Installation
+
+* When installing, put the SparseRREF.so to your /usr/local/lib (recommended,for the spasm library is located in the same place), and put folder SparseRREF to your /usr/local/Wolfram/Mathematica/$Version/Packages/.
+* If not work, add the following codes to your init.m (to get the path to this file, simply use        FileNameJoin[{$UserBaseDirectory, "Kernel", "init.m"}])
     
     
     $SparseRREFPath = "Your/Installation/Path/to/SparseRREF"
@@ -38,6 +43,6 @@ It can make RREF much faster.
    Cancel[SparseArray,Modulus->int_mod] 
 
 
-## Authors
+## Author
 
 Hefeng Xu, Department of Modern Physics, USTC.
