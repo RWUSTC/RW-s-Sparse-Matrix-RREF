@@ -13,7 +13,7 @@ It can make RREF much faster.
 
 ### Dependencies
 
-* SpaSM package installed on your pc. SpaSM on github: https://github.com/cbouilla/spasm
+* Currently included SpaSM package as libspasm.so in this module, no need to install. SpaSM on github: https://github.com/cbouilla/spasm
 * Better be used under ubuntu 20.04 and up.
 * Currently tested under Mathematica 12.0 and 13.0.
 
